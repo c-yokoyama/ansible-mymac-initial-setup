@@ -1,0 +1,8 @@
+dotfiles_repo: "git@github.com:gtongy/dotfiles.git"
+dotfiles_repo_local_destination: "~/my-priv-repositories"
+
+neobundle_repo: "git://github.com/Shougo/neobundle.vim"
+neobundle_repo_local_destination: "~/.vim/bundle/neobundle.vim"
+
+vim_color_molokai_repo: "https://github.com/tomasr/molokai"
+vim_color_molokai_repo_local_destination: "~/.vim/colors/"

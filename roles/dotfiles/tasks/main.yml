@@ -1,0 +1,34 @@
+
+ - name: Clone dotfiles repository
+   git:
+     repo: "{{ dotfiles_repo }}"
+     dest: "{{ dotfiles_repo_local_destination }}/dotfiles"
+     accept_hostkey: yes
+
+ - name: Link dotfiles into home directory
+   shell: "{{ dotfiles_repo_local_destination }}/dotfiles/create_symlinks.sh"
+
+ - name: Make directory vim-neobundle
+   file: path="~/.vim/bundle" state=directory
+
+ - name: Install neobundle
+   git:
+     repo: "{{ neobundle_repo }}"
+     dest: "{{ neobundle_repo_local_destination }}"
+     accept_hostkey: yes
+
+ - name: Make directory vim-color-molokai
+   file: path="~/.vim/colors" state=directory
+
+ - name: Install vim-color-molokai
+   git:
+     repo: "{{ vim_color_molokai_repo }}"
+     dest: "{{ dotfiles_home }}/molokai"
+     accept_hostkey: "{{ vim_color_molokai_repo_accept_hostkey }}"
+
+ - name: Stat vim-colors-directory
+   stat: path="{{ vim_color_molokai_repo_local_destination }}"
+   register: molokai_stat
+
+ - name: Move vim-color-molokai to vim-colors-directory
+   command: mv "{{ dotfiles_home }}/molokai/colors/molokai.vim" "{{ vim_color_molokai_repo_local_destination }}"

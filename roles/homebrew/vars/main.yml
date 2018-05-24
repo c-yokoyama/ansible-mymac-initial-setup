@@ -30,7 +30,6 @@ homebrew_cask_packages:
   - { name: iterm2 }
   - { name: keyboardcleantool }
   - { name: kindle }
-  - { name: line }
   - { name: shiftit}
   - { name: skim }
   - { name: skype }
