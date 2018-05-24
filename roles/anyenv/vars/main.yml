@@ -1,6 +1,5 @@
 anyenv_repository_url: https://github.com/riywo/anyenv
 
-anyenv_plugins_installation_dir: "{{ anyenv_installation_dir }}/plugins"
 anyenv_plugins:
   - name: anyenv-update
     repository_url: https://github.com/znz/anyenv-update.git

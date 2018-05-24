@@ -13,7 +13,7 @@
 
  - name: Create anyenv directory
    file:
-     path: "{{ anyenv_installation_dir }}/envs/{{ item }}"
+     path: "~/.anyenv/envs/{{ item }}"
      state: directory
      mode: 0775
    with_items:
