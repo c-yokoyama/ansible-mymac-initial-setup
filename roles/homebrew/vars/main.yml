@@ -1,0 +1,45 @@
+homebrew_taps:
+  - caskroom/cask
+
+homebrew_packages:
+  - { name: autoconf }
+  - { name: automake }
+  - { name: ansible }
+  - { name: awscli }
+  - { name: git }
+  - { name: jq }
+  - { name: nmap}
+  - { name: openssl}
+  - { name: peco}
+  - { name: pstree}
+  - { name: terminal-notifier }
+  - { name: tree }
+  - { name: wget }
+  - { name: zsh }
+  - { name: zsh-autosuggestions }
+  - { name: zsh-completions }
+  - { name: zsh-syntax-highlighting }
+  -  {name: zplug }
+
+homebrew_cask_packages:
+  - { name: alfred } 
+  - { name: docker }
+  - { name: feedly }
+  - { name: google-chrome } 
+  - { name: intellij-idea-ce }
+  - { name: iterm2 }
+  - { name: keyboardcleantool }
+  - { name: kindle }
+  - { name: line }
+  - { name: shiftit}
+  - { name: skim }
+  - { name: skype }
+  - { name: slack }
+  - { name: sourcetree }
+  - { name: sublime-text }
+  - { name: tweeten }
+  - { name: visual-studio-code }
+  
+  
+  
+  
