@@ -4,7 +4,7 @@ Initial setup for my mac with Ansible.
 
 ## Get Started
 
-Before Cloning this repository
+Before Cloning this repository.
 
 ```
 sudo xcodebuild -license
@@ -18,6 +18,7 @@ brew update
 brew install ansible python git
 ```
 
+Clone this repo.
 
 ```
 ansible-playbook -i hosts mymac.yml
