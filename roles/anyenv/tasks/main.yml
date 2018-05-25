@@ -1,28 +1,28 @@
+- name: Install anyenv
+  git:
+    repo: "{{ anyenv_repository_url }}"
+    dest: "~/.anyenv"
 
- - name: Install anyenv
-   git:
-     repo: "{{ anyenv_repository_url }}"
-     dest: "~/.anyenv"
+- name: Install anyenv plugins
+  git:
+    repo: "{{ item.repository_url }}"
+    dest: "~/.anyenv/plugins/{{ item.name }}"
+  with_items:
+    - "{{ anyenv_plugins }}"
 
- - name: Install anyenv plugins
-   git:
-     repo: "{{ item.repository_url }}"
-     dest: "~/.anyenv/plugins/{{ item.name }}"
-   with_items:
-      - "{{ anyenv_plugins }}"
-
- - name: Create anyenv directory
-   file:
-     path: "~/.anyenv/envs/{{ item }}"
-     state: directory
-     mode: 0775
-   with_items:
+- name: Create anyenv directory
+  file:
+    path: "~/.anyenv/envs/{{ item }}"
+    state: directory
+    mode: 0775
+  with_items:
     - "{{ anyenv_envs }}"
 
- - name: Install envs
-   shell:
-      "anyenv install -s {{ item }}"
-   environment:
-     PATH: "{{ anyenv_installation_dir }}/bin:{{ lookup('env', 'PATH') }}"
-   with_items:
-     - "{{ anyenv_envs }}"
+- name: Install envs
+  shell:
+     "anyenv install -s {{ item }}"
+  with_items:
+    - "{{ anyenv_envs }}"
+
+- name: Update anyenvs
+  shell: anyenv update

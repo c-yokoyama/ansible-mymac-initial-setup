@@ -1,5 +1,5 @@
 dotfiles_repo: "git@github.com:c-yokoyama/dotfiles.git"
-dotfiles_repo_local_destination: "~/mypriv-repositories"
+dotfiles_repo_local_destination: "~/my-repositories"
 
 neobundle_repo: "git://github.com/Shougo/neobundle.vim"
 neobundle_repo_local_destination: "~/.vim/bundle/neobundle.vim"

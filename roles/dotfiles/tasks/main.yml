@@ -12,7 +12,9 @@
 
 
 - name: Make directory vim-neobundle
-  file: path="~/.vim/bundle" state=directory
+  file: 
+    path: "~/.vim/bundle"
+    state: directory
 
 - name: Install neobundle
   git:
@@ -21,7 +23,9 @@
     accept_hostkey: yes
 
 - name: Make directory vim-color-molokai
-  file: path="~/.vim/colors" state=directory
+  file: 
+    path: "~/.vim/colors"
+    state: directory
 
 - name: Install vim-color-molokai
   git:
@@ -31,6 +35,11 @@
 
 - name: Cp vim-molokai to vim-colors-directory
   command: cp ~/vim-molokai/colors/molokai.vim ~/.vim/colors/
+
+- name: Delete vim-molokai tmp dir
+  file:
+    path: "~/vim-molokai"
+    state: absent
 
 
 
