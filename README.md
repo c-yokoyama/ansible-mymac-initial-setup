@@ -1,4 +1,4 @@
-# mac-localsetup-ansible]
+# mac-localsetup-ansible
 
 Initial setup for my mac with Ansible.
 
