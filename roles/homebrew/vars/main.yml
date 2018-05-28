@@ -1,5 +1,5 @@
 homebrew_taps:
-  - caskroom/cask
+  - homebrew/cask
 
 homebrew_packages:
   - { name: autoconf }
@@ -15,11 +15,11 @@ homebrew_packages:
   - { name: terminal-notifier }
   - { name: tree }
   - { name: wget }
+  - { name: z }
   - { name: zsh }
   - { name: zsh-autosuggestions }
   - { name: zsh-completions }
   - { name: zsh-syntax-highlighting }
-  -  {name: zplug }
 
 homebrew_cask_packages:
   - { name: alfred } 
