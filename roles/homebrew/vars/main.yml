@@ -6,15 +6,20 @@ homebrew_packages:
   - { name: automake }
   - { name: ansible }
   - { name: awscli }
+  - { name: delve }
+  - { name: ghq }
   - { name: git }
+  - { name: git-secrets }
   - { name: jq }
   - { name: nmap}
   - { name: openssl}
   - { name: peco}
   - { name: pstree}
   - { name: terminal-notifier }
+  - { name: tmux }
   - { name: tree }
   - { name: wget }
+  - { name: yarn }
   - { name: z }
   - { name: zsh }
   - { name: zsh-autosuggestions }
@@ -23,20 +28,26 @@ homebrew_packages:
 
 homebrew_cask_packages:
   - { name: alfred } 
+  - { name: clipy } 
   - { name: docker }
   - { name: feedly }
+  - { name: franz }
+  - { name: freshback }
+  - { name: google-backup-and-sync }
   - { name: google-chrome } 
-  - { name: intellij-idea-ce }
+  - { name: google-japanese-ime } 
+  - { name: inkdrop } 
   - { name: iterm2 }
   - { name: keyboardcleantool }
   - { name: kindle }
+  - { name: postman } 
   - { name: shiftit}
   - { name: skim }
   - { name: skype }
   - { name: slack }
   - { name: sourcetree }
   - { name: sublime-text }
-  - { name: tweeten }
+  - { name: typora }
   - { name: visual-studio-code }
   
   
