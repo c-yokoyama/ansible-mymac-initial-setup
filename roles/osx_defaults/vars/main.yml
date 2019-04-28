@@ -1,0 +1,24 @@
+# [WIP]
+
+osx_settings:
+  # Dark Mode
+  - {
+      domain: NSGlobalDomain,
+      key: AppleInterfaceStyle,
+      type: string,
+      value: Dark
+    }
+  # ファイル拡張子を常に表示
+  - {
+      domain: NSGlobalDomain,
+      key: AppleShowAllExtensions,
+      type: bool,
+      value: true
+    }
+ # Finder: Show dotfiles
+  - {
+      domain: finder,
+      key: AppleShowAllFiles,
+      type: bool,
+      value: true
+    } 
