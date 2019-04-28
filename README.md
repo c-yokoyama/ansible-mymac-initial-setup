@@ -1,28 +1,30 @@
-# mac-localsetup-ansible
+# ansible-mymac-initial-setup
 
-Initial setup for my mac with Ansible.
+Initial setup Ansible playbook for my Mac(OS X).
 
 ## Get Started
 
-Before Cloning this repository.
+### Before execute this playbook
 
 ```
-sudo xcodebuild -license
-xcode-select --install
+$ sudo xcodebuild -license
+$ xcode-select --install
 
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-brew doctor
-brew update
-
-brew install ansible python git
+$ brew doctor && brew update
+$ brew install ansible python git
 ```
 
-Clone this repo.
+### Execute playbook
+
+- Before executiing, register public key to github
+  - https://qiita.com/shizuma/items/2b2f873a0034839e47ce
 
 ```
-ansible-playbook -i hosts mymac.yml
+$ git clone git@github.com:c-yokoyama/ansible-mymac-initial-setup.git
+$ ansible-playbook -i hosts playbook.yml --ask-become-pass
 
-# if executing specific role
-ansible-playbook -i hosts mymac.yml --tags "dotfiles"
+// if executing specific role
+$ ansible-playbook -i hosts playbook.yml --tags "dotfiles" --ask-become-pass
 ```

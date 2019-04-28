@@ -41,5 +41,18 @@
     path: "~/vim-molokai"
     state: absent
 
+- name: Change default shell to /usr/local/bin/zsh
+  shell: chsh -s /usr/local/bin/zsh
+  become: yes
 
+- name: Edit /etc/shells
+  lineinfile: 
+    dest: /etc/shells
+    line: /usr/local/bin/zsh
+  become: yes
+    
+- name: Install zplugin
+  shell: curl -fsSL https://raw.githubusercontent.com/zdharma/zplugin/master/doc/install.sh
+  args:
+    warn: False
 

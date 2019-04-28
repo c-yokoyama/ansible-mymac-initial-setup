@@ -11,10 +11,11 @@ homebrew_packages:
   - { name: git }
   - { name: git-secrets }
   - { name: jq }
-  - { name: nmap}
-  - { name: openssl}
-  - { name: peco}
-  - { name: pstree}
+  - { name: nmap }
+  - { name: openssl }
+  - { name: peco }
+  - { name: pstree }
+  - { name: readline }
   - { name: terminal-notifier }
   - { name: tmux }
   - { name: tree }
