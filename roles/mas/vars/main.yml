@@ -1,0 +1,7 @@
+# appleid_user: 
+# appleid_pass: 
+mas_applications:
+  - {name: 'LINE', store_hash: 539883307}
+  - {name: 'Pocket', store_hash: 568494494}
+  - {name: 'Feedly', store_hash: 865500966}
+  - {name: 'Trello', store_hash: 1278508951}

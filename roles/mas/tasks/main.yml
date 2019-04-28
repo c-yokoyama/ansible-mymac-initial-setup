@@ -1,0 +1,21 @@
+####
+# The 'signin' command has been disabled on this macOS # version. Please sign into the Mac App Store app manually.
+# For more info see: https://github.com/mas-cli/mas/issues/164
+###
+
+#  - name: signout mas
+#    shell: >
+#      mas signout
+#  - name: signin to mas
+#    shell: >
+#      mas signin {{ appleid_user }} "{{ appleid_pass }}"
+ 
+- name: install applications
+  shell: >
+    mas install "{{ item.store_hash }}"
+  with_items: "{{mas_applications }}"
+  run_once: true
+
+- name: upgrade applications
+  shell: >
+    mas upgrade

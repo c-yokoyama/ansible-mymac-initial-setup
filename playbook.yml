@@ -8,5 +8,6 @@
     - { role: dotfiles, tags: [dotfiles] }
     - { role: anyenv, tags: [anyenv] }
     - { role: osx_defaults, tags: [osx] }
+    - { role: mas, tags: [mas] }
         
     

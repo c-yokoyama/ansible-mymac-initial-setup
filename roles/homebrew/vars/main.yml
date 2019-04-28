@@ -7,15 +7,18 @@ homebrew_packages:
   - { name: ansible }
   - { name: awscli }
   - { name: delve }
+  - { name: gettext }
   - { name: ghq }
   - { name: git }
   - { name: git-secrets }
   - { name: jq }
+  - { name: mas }
   - { name: nmap }
   - { name: openssl }
   - { name: peco }
   - { name: pstree }
   - { name: readline }
+  - { name: sbt }
   - { name: terminal-notifier }
   - { name: tmux }
   - { name: tree }
@@ -30,8 +33,8 @@ homebrew_packages:
 homebrew_cask_packages:
   - { name: alfred } 
   - { name: clipy } 
+  - { name: cheatsheet } 
   - { name: docker }
-  - { name: feedly }
   - { name: franz }
   - { name: freshback }
   - { name: google-backup-and-sync }
