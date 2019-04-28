@@ -6,6 +6,7 @@ anyenv_plugins:
 
 anyenv_envs:
    - goenv
+   - jenv
    - nodenv
    - pyenv
    - rbenv

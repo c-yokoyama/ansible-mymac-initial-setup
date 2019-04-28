@@ -23,6 +23,10 @@
      "anyenv install -s {{ item }}"
   with_items:
     - "{{ anyenv_envs }}"
+  args:
+    executable: /usr/local/bin/zsh
 
 - name: Update anyenvs
   shell: anyenv update
+  args:
+    executable: /usr/local/bin/zsh
