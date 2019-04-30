@@ -5,3 +5,4 @@ mas_applications:
   - {name: 'Pocket', store_hash: 568494494}
   - {name: 'Feedly', store_hash: 865500966}
   - {name: 'Trello', store_hash: 1278508951}
+  - {name: 'Display Menu', store_hash: 549083868}
