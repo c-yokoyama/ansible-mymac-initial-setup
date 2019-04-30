@@ -1,10 +1,10 @@
 # ansible-mymac-initial-setup
 
-Initial setup Ansible playbook for my Mac(OS X).
+Initial setup Ansible playbook for my Mac(macOS.
 
 ## Get Started
 
-### Before execute this playbook
+### Before executing this playbook
 
 ```
 $ sudo xcodebuild -license
