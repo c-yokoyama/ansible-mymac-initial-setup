@@ -7,11 +7,13 @@ homebrew_packages:
   - { name: ansible }
   - { name: awscli }
   - { name: delve }
+  - { name: eksctl }
   - { name: gettext }
   - { name: ghq }
   - { name: git }
   - { name: git-secrets }
   - { name: jq }
+  - { name: kubectx }
   - { name: mas }
   - { name: nmap }
   - { name: openssl }
