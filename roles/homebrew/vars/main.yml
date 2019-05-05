@@ -20,6 +20,7 @@ homebrew_packages:
   - { name: readline }
   - { name: sbt }
   - { name: terminal-notifier }
+  - { name: tfenv }
   - { name: tmux }
   - { name: tree }
   - { name: wget }
