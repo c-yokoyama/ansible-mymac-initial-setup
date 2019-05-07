@@ -6,8 +6,6 @@ homebrew_packages:
   - { name: automake }
   - { name: ansible }
   - { name: awscli }
-  - { name: delve }
-  - { name: eksctl }
   - { name: gettext }
   - { name: ghq }
   - { name: git }
@@ -20,7 +18,6 @@ homebrew_packages:
   - { name: peco }
   - { name: pstree }
   - { name: readline }
-  - { name: sbt }
   - { name: terminal-notifier }
   - { name: tfenv }
   - { name: tmux }
@@ -38,6 +35,7 @@ homebrew_cask_packages:
   - { name: clipy } 
   - { name: cheatsheet } 
   - { name: docker }
+  - { name: eksctl }
   - { name: franz }
   - { name: freshback }
   - { name: google-backup-and-sync }

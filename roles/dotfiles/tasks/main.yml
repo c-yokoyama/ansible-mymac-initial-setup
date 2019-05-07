@@ -27,6 +27,11 @@
     path: "~/.vim/colors"
     state: directory
 
+- name: Make directory vim backup
+  file: 
+    path: "~/.vimbackup"
+    state: directory
+
 - name: Install vim-color-molokai
   git:
     repo: "{{ vim_color_molokai_repo }}"
@@ -52,7 +57,7 @@
   become: yes
     
 - name: Install zplugin
-  shell: curl -fsSL https://raw.githubusercontent.com/zdharma/zplugin/master/doc/install.sh
+  shell: sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zplugin/master/doc/install.sh)"
   args:
     warn: False
 

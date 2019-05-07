@@ -8,7 +8,6 @@ Initial setup Ansible playbook for my Mac(macOS.
 
 ```
 $ sudo xcodebuild -license
-$ xcode-select --install
 
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -19,7 +18,7 @@ $ brew install ansible python git
 ### Execute playbook
 
 - Before executiing, register public key to github
-  - https://qiita.com/shizuma/items/2b2f873a0034839e47ce
+    - https://qiita.com/suthio/items/2760e4cff0e185fe2db9
 
 ```
 $ git clone git@github.com:c-yokoyama/ansible-mymac-initial-setup.git
